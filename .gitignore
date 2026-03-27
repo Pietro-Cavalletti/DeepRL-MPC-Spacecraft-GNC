@@ -1,0 +1,38 @@
+# --- Python Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+dist/
+build/
+
+# --- Machine Learning & Training Logs ---
+# Ignoring heavy raw TensorBoard event files
+**/tensorboard/**/events.out.tfevents*
+logs/
+tensorboard/New folder/
+
+# --- Simulation Results & Artifacts ---
+# Ignoring local output files with timestamps to keep the repo clean
+# (e.g., merit_indices_stats_20250821_152908.txt)
+*_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_*.png
+*_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_*.txt
+raw_data_for_plotting_*.npz
+
+# --- System & Temporary Files ---
+.DS_Store
+Thumbs.db
+struttura.txt
+*.bak
+*.tmp
+*.temp
+env_hash.txt
+prova.py
+
+# --- Large Model Files (Optional) ---
+# Uncomment the following lines if your .zip models are > 100MB
+# *.zip
+# *.pkl
